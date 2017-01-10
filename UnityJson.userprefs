@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\JavaScript\UnityJson.js">
+    <Files>
+      <File FileName="Assets\JavaScript\Game.js" Line="6" Column="21" />
+      <File FileName="Assets\C#\UnityJson.cs" Line="18" Column="1" />
+      <File FileName="Assets\C#\Game.cs" Line="1" Column="1" />
+      <File FileName="Assets\JavaScript\UnityJson.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
