@@ -1,4 +1,6 @@
 ﻿#pragma strict
+import System.IO;
+
 public var _game: Game;
 public var _json: String;
 
@@ -14,6 +16,18 @@ function Start () {
 	print (_game.categoria);
 	print (_game.lancamento);
 	
+	//Salvando json em arquivo
+	var _arquivo = File.CreateText (Application.dataPath+"/"+"game.json");
+	_arquivo.WriteLine (JsonUtility.ToJson(new Game("Teste","FPS")));
+	_arquivo.Close();
+	
+	//Lendo arquivo de json
+	var _arquivoJson = File.OpenText(Application.dataPath+"/"+"game.json");
+	_game = JsonUtility.FromJson(_arquivoJson.ReadLine().ToString(),Game);
+	_arquivoJson.Close ();
+	print (_game.nome);
+	print (_game.categoria);
+	print (_game.lancamento);
 }
 
 function Update () {}
